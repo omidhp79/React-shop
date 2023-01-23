@@ -1,0 +1,472 @@
+.HeaderBox {
+  border-bottom: 1px solid #dee2e6;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.07) !important;
+  padding: 10px 0px;
+  height: 85px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: white;
+}
+.headerContainer {
+  align-items: center;
+}
+.imgLogoHeader {
+  width: 70px;
+  height: auto;
+}
+
+.linkBar {
+  margin-right: 40px;
+}
+.linkBarItem {
+  position: relative;
+  margin-right: 25px;
+  color: var(--dark);
+  text-decoration: none;
+  font-size: var(--fs1);
+  cursor: pointer;
+  height: 28px;
+}
+.linkBarItem:hover {
+  color: var(--mainColor) !important;
+}
+.linkBarItem::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  height: 2px;
+  width: 0;
+  background-color: var(--mainColor);
+  transition: 0.4s;
+}
+.linkBarItem:hover::after {
+  width: 100%;
+}
+.linkBarIcon {
+  width: 13px;
+  height: 13px;
+  margin-right: 6px;
+}
+.optionsSite {
+  margin-right: auto;
+  align-items: center;
+}
+.cartBoxHeader,
+.searchBtn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--lightGray);
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+}
+.cartBoxHeader:hover,
+.searchBtn:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.cartBoxHeader {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+/* Header Drop Down  */
+
+.dropDownBox {
+  position: absolute;
+  top: 27px;
+  display: none;
+  z-index: 3;
+}
+.dropDown {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  padding: 15px;
+  flex-direction: column;
+  margin-top: 37px;
+  max-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  text-align: center;
+}
+
+.linkBarItem:hover .dropDownBox {
+  display: block;
+}
+.drpItem {
+  font-size: var(--fs2);
+  margin-bottom: 10px;
+  padding: 4px 8px;
+}
+.drpItem:last-child {
+  margin-bottom: 0px;
+}
+.drpItem:hover {
+  background: var(--lightGray);
+  border-radius: 12px;
+}
+
+/* header Cart Style */
+.cartBoxHeader {
+  position: relative;
+}
+.CartCount {
+  position: absolute;
+  right: -5px;
+  top: -3px;
+  background: green;
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  border-radius: 50%;
+  color: white;
+}
+.CartsBox {
+  background: white;
+  z-index: 2;
+  position: absolute;
+  width: 320px;
+  top: 67px;
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  left: -15px;
+}
+.CartItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: 0.4s;
+}
+.imgPrdCart {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: auto;
+}
+.imgPrd {
+  width: 100%;
+  height: 100%;
+}
+.namePrdCart {
+  margin-right: auto;
+}
+.CartItem:hover {
+  background: var(--lightGray);
+  border-radius: 12px;
+}
+.gotoCart {
+  color: var(--mainColor);
+  margin-top: 15px !important;
+  border-bottom: 1px solid var(--mainColor);
+}
+.btnMiniMenu {
+  display: none;
+}
+.rollItems {
+  display: flex;
+  align-items: center;
+}
+.rollItemsContainer {
+  flex: 1 1 auto;
+}
+.showMobile {
+  display: none;
+}
+/* header Search Style */
+.searchBoxParent {
+  position: absolute;
+  width: 320px;
+  height: 300px;
+  left: 0;
+  top: 0;
+}
+.searchBox {
+  background: white;
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  margin-top: 67px;
+  position: relative;
+  padding-top: 30px;
+}
+.closeSearchBox {
+  position: absolute;
+  right: 0;
+  top: 0;
+  right: 4px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 20px;
+}
+.searchResultBox {
+  overflow-y: auto;
+  max-height: 270px;
+}
+.inputSearchHeader {
+  width: 100%;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  height: 40px;
+  padding: 5px 10px 5px 40px;
+}
+.inputSearchHeader:focus,
+.inputSearchHeader:focus-visible {
+  outline-color: var(--secondColor);
+}
+.loader {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite;
+  position: absolute;
+  left: 20px;
+  top: 35px;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 3px solid var(--mainColor);
+  animation: prixClipFix 2s linear infinite;
+}
+.loader::after {
+  border-color: var(--secondColor);
+  animation: prixClipFix 2s linear infinite, rotate 0.5s linear infinite reverse;
+  inset: 6px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+/*       Responsiv       */
+
+/* desktop  */
+@media (max-width: 1400px) {
+}
+
+/* desktop  */
+@media (max-width: 1200px) {
+  .linkBarItem:focus .dropDownBox {
+    display: block;
+  }
+}
+
+@media (max-width: 1260px) {
+  .dropDownBox {
+    right: -250px;
+  }
+}
+
+/* laptop  */
+@media (max-width: 991px) {
+  .HeaderBox {
+    height: 65px;
+  }
+  .imgLogoHeader {
+    width: 50px;
+  }
+  .linkBarItem:focus {
+    color: var(--mainColor);
+  }
+
+  .linkBar {
+    margin-right: 0px;
+  }
+}
+
+/* Tablet  */
+@media (max-width: 767px) {
+  .imgLogoHeader {
+    width: 40px;
+    height: auto;
+  }
+  .showMobile {
+    display: block;
+  }
+  .hideMobile {
+    display: none;
+  }
+  .btnMiniMenu {
+    padding: 0;
+    font-size: 24px;
+  }
+  .btnLog_InOut {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .HeaderBox {
+    height: 55px;
+    padding: 0;
+  }
+  .headerContainer {
+    height: 100%;
+    align-items: center;
+  }
+  .rollItemsContainer {
+    position: fixed;
+    background: #00000087;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 9;
+  }
+  .rollItems {
+    flex-direction: column;
+    width: 250px;
+    background: white;
+    height: 100%;
+    align-items: flex-start;
+  }
+  .rollItems .logoBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--mainColor);
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .linkBar {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 25px;
+  }
+  .optionsSite {
+    margin-right: 25px;
+    margin-top: 30px;
+  }
+  .linkBarItem {
+    margin-top: 15px;
+    height: auto;
+  }
+  .btnCloseMiniMenu {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #bb1010;
+  }
+  .rollItems .imgLogoHeader {
+    width: 60px;
+  }
+  .showMiniMenu {
+    display: block;
+  }
+  .showMiniMenu .rollItems {
+    animation: trnsalteMiniMenu 1s;
+  }
+  .dropDownBox {
+    position: relative;
+    width: 200px;
+    right: 0;
+    left: 0;
+  }
+  .dropDown {
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+    height: 150px;
+    padding: 0;
+    border: 0;
+    overflow-y: auto;
+    margin-bottom: 15px;
+  }
+  .linkHDrop::after {
+    display: none;
+  }
+  .drpItem {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .CartsBox {
+    width: 250px;
+    right: -71px;
+    top: 46px;
+    border-radius: 0;
+  }
+  .imgPrdCart {
+    width: 50px;
+    height: 50px;
+  }
+  .namePrdCart{
+    font-size: 13px;
+  }
+  .searchBoxParent {
+    width: 250px;
+    left: 0;
+    top: -20px;
+    right: -26px;
+  }
+  .searchBox{
+    border-radius: 0;
+  }
+  .categoriesBox, .prdListBox {
+    margin-top: 35px;
+  }
+  .stieTitle {
+    font-size: 20px;
+  }
+
+  @keyframes trnsalteMiniMenu {
+    from {
+      translate: 300px;
+    }
+    to {
+      translate: 0;
+    }
+  }
+}
+
+/* mobile  */
+@media (max-width: 575px) {
+}

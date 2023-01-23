@@ -1,0 +1,107 @@
+.FooterBox {
+  background-color: var(--dark);
+  color: white;
+}
+.subTextFooter {
+  font-size: 27px;
+}
+.topFooter {
+  padding: 50px 0;
+  border-bottom: 1px solid var(--lightGray);
+}
+#subBtnFooter {
+  position: absolute;
+  left: 17px;
+  top: 5px;
+  height: 40px;
+}
+.SubInput {
+  height: 50px;
+  border-radius: 30px;
+}
+.subInputBox {
+  position: relative;
+}
+
+.middleFooter {
+  padding: 50px 0;
+}
+.footerMiddleTitle {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.footerMiddleItems {
+  display: flex;
+  flex-direction: column;
+  color: var(--lightGray);
+}
+.siteFuitcher {
+  margin-bottom: 7px;
+  display: flex;
+  transition: 0.4s;
+  color: var(--lightGray);
+}
+
+.siteFuitcher::before {
+  content: "-";
+  transition: 0.4s;
+  width: 0;
+  opacity: 0;
+}
+.siteFuitcher:hover::before {
+  content: "-";
+  width: 8px;
+  opacity: 1;
+  margin-left: 5px;
+}
+.siteFuitcher:hover {
+  color: white !important;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.socialItem {
+  font-size: 18px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  transition: 0.4s;
+  color: var(--lightGray);
+  cursor: pointer;
+}
+.socialItem:hover {
+  color: var(--dark) !important;
+  background: var(--lightGray);
+}
+
+@media (max-width: 991px) {
+  .subTextFooter {
+    font-size: 20px;
+  }
+  .SubInput {
+    height: 40px;
+    font-size: 15px;
+  }
+  #subBtnFooter {
+    left: 16px;
+    top: 3px;
+    height: 33px;
+    font-size: 12px;
+  }
+  .footerMiddleTitle {
+    font-size: 20px;
+  }
+  .footerMiddleItems {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .topFooter {
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,22 @@
+.hasValue label {
+  bottom: 43px;
+  font-size: 13px;
+  right: 2px;
+  color: var(--mainColor);
+}
+.errValue input {
+  border-bottom-color: #db3545 !important;
+}
+.errMsg {
+  display: none;
+  position: absolute;
+  bottom: -25px;
+  font-size: 12px;
+  color: #db3545;
+}
+.errValue .errMsg {
+  display: block;
+}
+.errValue label {
+  color: #db3545;
+}

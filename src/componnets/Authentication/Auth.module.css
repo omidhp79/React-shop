@@ -1,0 +1,74 @@
+.authBox {
+  max-width: 900px;
+  margin: 80px auto 80px;
+  border-radius: 20px;
+  transition: 0.3s;
+  border: 1px solid var(--lightGray);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.063) !important;
+  overflow: hidden;
+}
+.authBox:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.imgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #27debe;
+  padding: 70px 0;
+  box-shadow: 9px 0px 5px #00000057;
+  height: 100%;
+
+}
+.authImg {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.titleForm {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 30px;
+  color: var(--mainColor);
+  font-family: mainFontBold;
+}
+.inputBox {
+  margin-top: 50px;
+  padding: 0 25px;
+}
+.inputBox input {
+  outline: 0 !important;
+  box-shadow: none !important;
+  border: 0;
+  border-bottom: 4px solid var(--secondColor);
+  border-radius: 0;
+  transition: 0.3s;
+  height: 45px;
+  padding: 0;
+}
+.formLabel {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: var(--secondColor);
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.singleBox {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.inputBox input:focus {
+  border-bottom: 4px solid var(--mainColor);
+}
+
+.inputBox input:focus ~ .formLabel {
+  bottom: 43px;
+  font-size: 13px;
+  right: 2px;
+  color: var(--mainColor);
+}

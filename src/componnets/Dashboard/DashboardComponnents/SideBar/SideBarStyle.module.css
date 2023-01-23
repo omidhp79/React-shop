@@ -1,0 +1,137 @@
+.headerBox {
+    display: flex;
+    background: var(--secondColor);
+    width: 100%;
+}
+
+.bgLoghtGray {
+    background-color: var(--lightGray);
+}
+
+.headerContainer {
+    max-width: 1320px;
+    margin-right: 250px;
+    margin-left: auto;
+
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* .freeSpace {
+    width: 250px;
+} */
+.searchBox {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+}
+
+.iconSearch {
+    position: absolute;
+    left: 13px;
+    top: 8px;
+    font-size: 21px;
+}
+
+.searchInput {
+    width: 100%;
+    border-radius: 20px
+}
+
+.userInfoBox {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.userName,
+.sideBarHeadName {
+    font-size: 20px;
+    font-family: mainFontBold;
+    color: white;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.ImgBox {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBarBox {
+    width: 250px;
+    background: #2d616ce6;
+    position: fixed;
+    top: 0;
+    height: 100%;
+}
+
+.sideBarHeadName {
+    font-size: 20px;
+    font-family: mainFontBold;
+    color: white;
+    margin-bottom: 0;
+}
+
+.sideBarHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-size: 40px;
+    color: white;
+}
+
+.sideBarItems {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 18px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.sideItem,
+.activeLink {
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.activeLink {
+    background: white;
+    color: var(--mainColor);
+}
+
+.sideItem:hover {
+    border: 2px solid white;
+    color: white !important;
+}
+.logoutBtn{
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid transparent;
+    text-align: right;
+    font-size: 18px;
+}
+.logoutBtn:hover{
+    border: 3px solid #dc3545;
+    background-color: white;
+    color: #dc3545;
+}

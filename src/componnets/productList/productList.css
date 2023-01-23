@@ -1,0 +1,70 @@
+.singlePrdListBox {
+  background: var(--lightGray);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 8%) !important;
+  transition: 0.4s;
+  cursor: pointer;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 24px;
+}
+.singlePrdListBox .singlePrd{
+    padding: 8px;
+}
+
+.imgPrd {
+  width: 100%;
+  transition: 0.4s;
+}
+.singlePrd {
+  padding: 10px;
+  margin: auto;
+  padding: 25px;
+}
+.singlePrd:hover .imgPrd{
+  scale: 1.2;
+}
+.prdImgBox {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.prdName {
+  font-size: var(--fs3);
+  flex: 0 0 100%;
+  margin-top: 15px;
+}
+
+.addToCartBox {
+  display: flex;
+  align-items: center;
+}
+.addToCart {
+  background: var(--lightGray);
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.firstPrice {
+  text-decoration: 2px var(--dark) line-through;
+  font-size: 18px;
+}
+.disCountPrice {
+  margin-left: 13px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.prdRating {
+  color: #e5b273;
+  margin-bottom: 0;
+}
+.descPrd {
+  justify-content: space-between;
+}

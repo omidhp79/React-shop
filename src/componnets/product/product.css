@@ -1,0 +1,40 @@
+.col500px {
+  flex: 0 0 500px;
+}
+.galleryShortImg {
+  display: flex;
+  margin: 15px -8px 0;
+}
+.galleryIgItem {
+  flex: 1 1 auto;
+  padding: 8px;
+}
+.galleryIgItem img {
+  border-radius: 10px;
+  width: 100%;
+}
+.mainImgCBox {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+}
+.mainImgCBox img {
+  width: 100%;
+}
+
+#singleProduct .firstPrice{
+    font-size: 20px;
+    color: gray;
+    text-align: left;
+}
+
+#singleProduct .disCountPrice{
+    text-align: left;
+    margin-left: 0;
+    font-size: 25px;
+}
+.prdDecription{
+  font-size: 17px;
+    color: dimgrey;
+}

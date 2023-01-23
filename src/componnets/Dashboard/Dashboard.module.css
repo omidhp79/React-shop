@@ -1,0 +1,25 @@
+.body {
+    /* background-color: var(--lightGray) */
+    background-color: red
+}
+
+.contentBox {
+    max-width: 1320px;
+    margin-right: 250px;
+    margin-left: auto;
+    padding: 30px 15px;
+}
+.titlePage{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-family: mainFontBold;
+}
+.titlePage::after{
+    content: "";
+    height: 3px;
+    flex: 1 1 auto;
+    display: flex;
+    margin-right: 15px;
+    background-color: var(--mainColor);
+}
